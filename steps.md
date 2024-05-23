@@ -14,3 +14,15 @@
 
 7. Create a model class and controller class 
 8. getAllProducts API is called which in turn calls the get method from model class .
+9. Before using any post req we have to install body-parser
+    npm i body-parser
+    we have to parse in json format
+
+10. install multer - npm i multer
+    create a file in middleware - fileupload.middleware.js
+    configure the destination and the filename 
+
+    - in defining filename in fileUpload Middleware you should use .replace(/:/g, '_') as in windows colon is not allowed.
+
+11. ProductController - addProduct() - extract the details apart from imageUrl as it is a file and then imageUrl: req.file.filename  
+12. Model - add() - give id to the product and push the product to the products array 
