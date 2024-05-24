@@ -10,6 +10,7 @@ const productController = new ProductController();
 
 productRouter.get('/',productController.getAllProducts)
 productRouter.post('/', upload.single('imageUrl') ,productController.addProduct)
+productRouter.get('/filter',productController.filterProduct)// localhost:2300/api/products/filter?minPrice=10&maxPrice=20&category=Category1
 productRouter.get('/:id',productController.getOneProduct)
 
 export default productRouter;

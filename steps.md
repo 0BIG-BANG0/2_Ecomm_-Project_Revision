@@ -26,3 +26,18 @@
 
 11. ProductController - addProduct() - extract the details apart from imageUrl as it is a file and then imageUrl: req.file.filename  
 12. Model - add() - give id to the product and push the product to the products array 
+
+13. GetOneProduct - 
+        it should have an id of the product which is going to be fetched
+        routes - /:id 
+        controller - id = req.params.id
+        model - we use find function to fetch that particular product
+
+14. filterProduct - 
+        in filter product we have to filter the product on basis of some parameters.
+        But here we use req.query rather than req.body as we only need to retrieve the data  based on the condition given in model class, while in req.body we can modify the data.
+        route - /filter
+        controller - req.query 
+        model - uses filter function to filter the data it ask a cb function
+
+

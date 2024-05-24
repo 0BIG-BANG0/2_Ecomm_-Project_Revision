@@ -21,6 +21,15 @@ export default class ProductModel {
     const index = products.find((p) => p.id == id);
     return index;
   }
+  static filter(minPrice, maxPrice, category) {
+    const result = products.filter((p) => {
+      return (
+        p.price >= minPrice && p.price <= maxPrice && p.category == category
+      );
+    });
+
+    return result;
+  }
 }
 
 var products = [
