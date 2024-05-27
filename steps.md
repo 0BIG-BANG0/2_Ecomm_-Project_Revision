@@ -40,4 +40,14 @@
         controller - req.query 
         model - uses filter function to filter the data it ask a cb function
 
+15. User 
+        SignUp - 
+                route - It is a post req 
+                controller - it extracts the data and send to model
+                model - it add the data to the users array
+        SignIn - 
+                route - It is a post req 
+                controller - it extracts the data and send to model
+                model - it checks the data usinf find function and return if found else in controller we have to handle condition know wheter the data given war correct.
+
 
