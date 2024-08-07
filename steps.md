@@ -50,4 +50,8 @@
                 controller - it extracts the data and send to model
                 model - it checks the data usinf find function and return if found else in controller we have to handle condition know wheter the data given war correct.
 
-
+16. BasicAuth - 
+                1. Check if the authorization header is empty
+                2. Extract credentials from the authorization header
+                3. Decode credentials
+                4. Create a getAll method in usermodel and use it in basicAuthmiddleware to find the user in the database.
