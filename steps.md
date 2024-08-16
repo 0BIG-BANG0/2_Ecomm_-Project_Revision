@@ -55,3 +55,25 @@
                 2. Extract credentials from the authorization header
                 3. Decode credentials
                 4. Create a getAll method in usermodel and use it in basicAuthmiddleware to find the user in the database.
+17. JWT -
+                1. npm i jsonwebtoken
+                2. import jwt 
+                3. Inside User Controller Logincreate the token using jwt.sign() in payload dont give password
+                :: You can store it in cookies also
+                4. return the token
+
+                5. Create a middleware Function and in which 
+                        1.you can req it from headders or cookies where you have stored 
+                        2. use jwt.verify(token, secretkey)
+
+18. RateProduct - 
+                1. product model -
+                        1.Validate user and product
+                        2. Check if there are any ratings and if not then add ratings array
+                        3. Check if user rating is already available
+                        4. If no existing rating then add new rating.
+                2. product controller -
+                        1.use query parameter 
+                        2.return error if not rating added
+
+19. Cart - 
