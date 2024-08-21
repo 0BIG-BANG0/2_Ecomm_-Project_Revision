@@ -76,4 +76,37 @@
                         1.use query parameter 
                         2.return error if not rating added
 
-19. Cart - 
+19. Cart -  Try to retrieve UserId from token from plyload it will make it more secure
+
+20. Delete Cart Item- 
+
+21. Swagger -   npm i swagger-ui-express
+                app.use("/api-docs", swagger.serve, swagger.setup(apiDocs));
+                try to implement swagger 3.0
+
+22. Handle 404 - 1. When a user sends a request to a non-existent API, the default response
+                        provided by the server and client (browser) may not be informative or helpful.
+                2. To address this issue, we need to send a separate message that indicates the
+                requested resource does not exist or is not found.
+                ● We can configure a middleware at the end of all our routes to handle 404
+                requests.
+                ● This middleware will handle requests that do not match any existing paths in
+                our application.
+
+
+23. CORS -      1. configure it manually
+                2. configure it using Library
+                        1. npm i cors
+                        var corsOptions = {
+                        origin: 'http://127.0.0.1:5500',
+                        }
+                        app.use(cors(corsOptions))            
+
+
+24. Handling Errors
+ 1. Creating Logger Middleware -  we have use writefile function but it ovverfile the current file so our log file should not be ovverridden so we use appendFile function
+
+ 2. Us the logger middleware at Application level in index.js file    
+
+ 3. Using Winston Logger - It is a npm librabry which helps to log in effictive way
+        npm i winston

@@ -43,7 +43,7 @@ export default class ProductController {
       productID,
       rating
     )
-    console.log(error)
+    // console.log(error)
     if(error){
       res.status(400).send(error)
     }else{
