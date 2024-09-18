@@ -110,3 +110,23 @@
 
  3. Using Winston Logger - It is a npm librabry which helps to log in effictive way
         npm i winston
+
+4. Handling error using try catch on those part of code where we know it is going to give error while fetching from database when a wrong input is given.
+Error you go inside of this function it has meassge property to get the error message on console . These are user defined error
+The catch block receives an error object that contains information about the error, including the error message, name of the error, and a stack trace.
+
+5. There is a better way You can Hnadle these errors at Application level
+By applying this error handler middlerware we are not sending the internal details we are just sending the meassag
+6. Created a cutom error Handler and  use this class in error handler middleware if(err instanceof ApplicationError){
+    res.status(err.code).send(err.message)
+  }
+
+25. MongoDB
+        - npm i mongodb
+        - read documentation
+        -we create a config folder in src and created a file mongodb.js
+        - import MongoClient and store the connection-string to the url
+        - creted a connectToMongodb function then inside the callback gave the connection string and connec t return a promise so it is handled by try and catch.\
+        - as soon as the server is starting we are calling the function connectToMongoDb()
+        
+        README MAIN 3 - COnnecting MONGODB CLient

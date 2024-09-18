@@ -10,6 +10,7 @@ import jwtAuth from "./src/middleware/jwt.middleware.js";
 import cartRouter from "./src/features/cart/cartItems.routes.js";
 import apiDocs from "./swagger.json" assert { type: "json" };
 import loggeerMiddleware from "./src/middleware/logger.middleware.js";
+import { ApplicationError } from "./src/error-handler/applicationError.js";
 dotenv.config();
 
 //Create an instance of express app
@@ -49,6 +50,17 @@ app.use(loggeerMiddleware)
 app.use("/api/products", jwtAuth, productRouter);
 app.use("/api/cartItems", jwtAuth, cartRouter);
 app.use("/api/users", userRouter);
+
+// Error Handler Middleware
+app.use((err, req, res, next) => {
+  console.error(err)
+  if(err instanceof ApplicationError){
+    res.status(err.code).send(err.message)
+  }
+  //sercer errors
+  res.status(500).send('Something went wrong try Later!')
+})
+
 //Middleware to handle 404 request keep it at the end if none of the above api handles the req then this api is executed
 
 app.use((req, res) => {
