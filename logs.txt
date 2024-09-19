@@ -9,3 +9,31 @@
 {"level":"info","message":"/api/products/rate?userID=2&productID=10&rating=4 - {}","service":"request-logging"}
 {"level":"info","message":"/api/products/rate?userID=2&productID=10&rating=4 - {}","service":"request-logging"}
 {"level":"info","message":"/api/products/rate?userID=2&productID=10&rating=4 - {}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller3\",\"email\":\"seller3@ecom.com\",\"password\":\"seller 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller3\",\"email\":\"seller3@ecom.com\",\"password\":\"seller 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller3\",\"email\":\"seller3@ecom.com\",\"password\":\"seller 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller3\",\"email\":\"seller3@ecom.com\",\"password\":\"seller 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller3\",\"email\":\"seller3@ecom.com\",\"password\":\"seller 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller3\",\"email\":\"seller3@ecom.com\",\"password\":\"seller 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller3\",\"email\":\"seller3@ecom.com\",\"password\":\"seller 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller3\",\"email\":\"seller3@ecom.com\",\"password\":\"seller 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller3\",\"email\":\"seller3@ecom.com\",\"password\":\"seller 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller4\",\"email\":\"seller4@ecom.com\",\"password\":\"seller4\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller\",\"email\":\"seller@ecom.com\",\"password\":\"seller\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller5\",\"email\":\"seller5@ecom.com\",\"password\":\"seller5\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller5\",\"email\":\"seller5@ecom.com\",\"password\":\"seller5\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller5\",\"email\":\"seller5@ecom.com\",\"password\":\"seller5\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller6\",\"email\":\"seller6@ecom.com\",\"password\":\"seller6\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"name\":\"seller6\",\"email\":\"seller6@ecom.com\",\"password\":\"seller6\",\"type\":\"seller\"}","service":"request-logging"}

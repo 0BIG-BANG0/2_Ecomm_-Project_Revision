@@ -130,3 +130,34 @@ By applying this error handler middlerware we are not sending the internal detai
         - as soon as the server is starting we are calling the function connectToMongoDb()
         
         README MAIN 3 - COnnecting MONGODB CLient
+
+26. SignUP
+        - we have to break it into steps
+        -1. get the database 
+        -2. get the collection
+        -3. do the operations extract the user info from the controlerr
+        -4.  add the user info into database using insertOne() function of mongoDB for that use 
+                -- npm mongodb > github home > scoll to documentation > then insert operation
+        -5. insertOne function return us promise so we have to use async await 
+        -6. user route - userRouter.post("/signup", (req, res) => {
+                                userController.signUp(req, res);
+                        });
+                        In this version, instead of directly passing userController.signUp, you're wrapping it in an anonymous arrow function, which takes req and res as parameters and then calls userController.signUp(req, res).
+
+                        Why is this Change Important?
+                        By wrapping the userController.signUp method in an arrow function, you're ensuring that the context of this remains within the userController instance. This approach eliminates the issue where this in the signUp method would refer to the wrong context (the router's context).
+
+                Q-What is the responsibility of the repository module in a Node.js application?
+                A-To abstract the data access code and centralize it.
+                SOL-The repository module in a Node.js application is primarily designed to serve as an abstraction layer over the data access code. This means that instead of having database-related code scattered throughout the application, it is centralized within the repository.
+
+27.     Using Hash Password -   How to Store Passwords in database?
+                                It is important as one should know how to store data in database
+                                1. npm i bcrypt
+                                2. hash method returns a promise and it takes 2 inputs the data that need to be hashed and the salt(it is basically )
+                                3.bcrypt is a popular password hashing library used to securely store passwords in applications. It incorporates a salt to protect against rainbow table attacks and performs multiple hashing rounds to increase the computational cost of brute-force attacks.
+                                4.Salt rounds: A higher number of rounds means more computational effort, making it harder for attackers to crack.
+                                Asynchronous functions: The hashing and comparison methods are asynchronous, meaning they don't block the event loop.
+                                Secure hashing: bcrypt is designed specifically for password hashing and is widely trusted for its security.
+                                3. //Best Practice is to exclude the password before sending to the client
+                                // Setting password to undefined before sending it
