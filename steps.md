@@ -161,3 +161,16 @@ By applying this error handler middlerware we are not sending the internal detai
                                 Secure hashing: bcrypt is designed specifically for password hashing and is widely trusted for its security.
                                 3. //Best Practice is to exclude the password before sending to the client
                                 // Setting password to undefined before sending it
+
+28.     .env File -     1. npm i dotenv
+                        Which of the following statements are true about the dotenv library?
+                        Options: Pick one correct answer from below
+                        *Parses and loads environment variables from a .env file into the process.env object.
+                        *Allows for encryption and decryption of environment variables.
+                        *Can be used to overwrite environment variables of the operating system.
+                        *Parses and loads environment variables from a .env file into the global.env object.
+                        Solution description
+                        The dotenv library in Node.js is designed to read and load variables from a .env file directly into the process.env object. It neither provides encryption capabilities, nor does it overwrite the operating system's environment variables or load into a global.env object.
+
+29. Product repository -        1. add  getAll and get 
+                                2. find()
