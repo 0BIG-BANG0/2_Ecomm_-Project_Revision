@@ -1,5 +1,4 @@
 import UserModel from "./user.model.js";
-import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import { ApplicationError } from "../../error-handler/applicationError.js";

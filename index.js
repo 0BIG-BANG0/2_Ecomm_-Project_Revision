@@ -1,5 +1,6 @@
-import express from "express";
 import dotenv from "dotenv";
+dotenv.config();
+import express from "express";
 import swagger from "swagger-ui-express";
 import cors from 'cors'
 import productRouter from "./src/features/product/routes/product.routes.js";
@@ -11,10 +12,13 @@ import cartRouter from "./src/features/cart/cartItems.routes.js";
 import apiDocs from "./swagger.json" assert { type: "json" };
 import loggeerMiddleware from "./src/middleware/logger.middleware.js";
 import { ApplicationError } from "./src/error-handler/applicationError.js";
-dotenv.config();
+
+
 
 //Create an instance of express app
 const app = express();
+
+
 
 //CORS policy configuration
 var corsOptions = {
